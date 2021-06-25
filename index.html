@@ -1,0 +1,84 @@
+<html>
+
+<head>
+
+    <title>Sliding Puzzle</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+</head>
+
+<body>
+
+    <div class="game-board">
+        <div class="box" style="background-color:red"></div>
+        <div class="box" style="background-color:yellow"></div>
+        <div class="box" style="background-color:blue"></div>
+        <div class="box" style="background-color:green"></div>
+        <div class="box" style="background-color:orange"></div>
+        <div class="box" style="background-color:brown"></div>
+        <div class="box" style="background-color:red"></div>
+        <div class="box" style="background-color:yellow"></div>
+        <div class="box" style="background-color:blue"></div>
+    </div>
+    <div>
+        <figure class="sliding-puzzle-figure">
+
+            <ul class="sliding-puzzle">
+                <li class="tile" style="background-color:red;">1</li>
+                <li class="tile" style="background-color:yellow;">2</li>
+                <li class="tile" style="background-color:blue;">3</li>
+                <li class="tile" style="background-color:green;">4</li>
+                <li class="tile" style="background-color:orange;">5</li>
+                <li class="tile" style="background-color:brown;">6</li>
+                <li class="tile" style="background-color:red;">7</li>
+                <li class="tile" style="background-color:yellow;">8</li>
+                <li class="tile" style="background-color:blue;">9</li>
+                <li class="tile" style="background-color:green;">10</li>
+                <li class="tile" style="background-color:orange;">11</li>
+                <li class="tile" style="background-color:brown;">12</li>
+                <li class="tile" style="background-color:red;">13</li>
+                <li class="tile" style="background-color:yellow;">14</li>
+                <li class="tile" style="background-color:blue;">15</li>
+                <li class="tile" style="background-color:green;">16</li>
+                <li class="tile" style="background-color:orange;">17</li>
+                <li class="tile" style="background-color:brown;">18</li>
+                <li class="tile" style="background-color:red;">19</li>
+                <li class="tile" style="background-color:yellow;">20</li>
+                <li class="tile" style="background-color:blue;">21</li>
+                <li class="tile" style="background-color:green;">22</li>
+                <li class="tile" style="background-color:orange;">23</li>
+                <li class="tile" style="background-color:brown;">24</li>
+            </ul>
+
+
+        </figure>
+    </div>
+
+
+    <div class="center">
+        <button onclick="setInterval(myTimer, 1000);" id="shuffle" class="shuffle1">New Game</button>
+        <a id="solve"></a>
+        <p id="demo"> </p>
+    </div>
+
+    <div class="moves">Moves: <span id="movesnum">0</span> Time: <span id="timenum">0</span></div>
+
+
+
+    <script>
+        var b = 0
+        var movescell = document.getElementById("timenum");
+
+        function myTimer() {
+
+            const d = new Date();
+            document.getElementById("timenum").innerHTML = b++;
+        }
+    </script>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
